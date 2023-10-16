@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(43, 1, 91) 13.4%,
+    rgb(122, 2, 54) 100.2%
+  );
+}
+@font-face {
+  font-family: Poppins Bold;
+  src: url(/assets/fonts/Poppins-Bold.otf);
+}
+@font-face {
+  font-family: Futura;
+  src: url(/assets/fonts/Futura\ Heavy\ font.ttf);
+}
+
+/* Style my header */
+header h1 {
+  font-family: Poppins Bold;
+  /* margin-top: 50px;
+  margin-left: 40px; */
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: bisque;
+  background-color: #081b29;
+  border-radius: 5px;
+}
+h1 span {
+  color: rgb(83, 212, 212);
+}
+/* Position the search form */
+#search-form {
+  float: right;
+  margin-right: 40%;
+  margin-top: -50px;
+}
+/* Placement and arrangement of the movies */
+#movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.movie-card {
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.movie-card .image-container {
+  position: relative;
+  overflow: hidden;
+}
+/* Hover the movie details */
+.movie-card .image-container:hover .movie-details {
+  transform: translateY(0);
+}
+
+.movie-card .movie-details {
+  font-family: Futura;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: blue;
+  
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.movie-card .movie-details h3 {
+  color: black;
+}
+.movie-card:hover .movie-details {
+  transform: translateY(0);
+}
+/* Style my seach input */
+#search-input {
+  padding: 6px 20px;
+  font-family: Futura;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+/* style the buy ticket button */
+#submit-btn {
+  padding: 4px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-family: Poppins Bold;
+  background-color: rgb(104, 38, 167);
+  transition: 0.3s;
+  cursor: pointer;
+}
+#submit-btn:hover {
+  background-color: blueviolet;
+}
+
+/* Style for genre buttons */
+.button {
+  font-family: Futura;
+  background-color: rgb(43, 92, 226);;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 1px solid black;
+}
+/* Positions the genre movies buttons */
+#genre-buttons {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Hover effect on the buttons*/
+
+.button:hover {
+  background-color: #1f87f5;
+  transform: translateY(0);
+}
+
+.rating {
+  color: #ff6600;
+}
+/* .like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #426994;
+  padding-right: 80%;
+} */
+#comment-form {
+  display: flex;
+}
+.comments {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #522020;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.button {
+  font-family: Futura;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

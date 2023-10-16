@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Haven </title>
+    <!-- Link my html to my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="website icon" href="">
+  </head>
+  <body> 
+    <header>
+      <h1>Movie &nbsp;<span> Haven </span></h1>
+      <!--  Adds a search movie button -->
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Input movie title" />
+        <button id="submit-btn">Search</button>
+      </form>
+      <!-- Adds submit form -->
+      <form id="comment-form"></form>
+      <div id="comments-list"></div>
+
+      <div id="genre-buttons">
+        <!-- <button id="romance-button">Romance</button>
+        <button id="thriller-button">Thriller</button> -->
+      </div>
+    </header>
+    <main>
+      <section class="movies">
+        <div id="movie-list"></div>
+      </section>
+      <section class="movie-details">
+        <div id="movie-info"></div>
+      </section>
+    </main>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
