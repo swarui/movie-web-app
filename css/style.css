@@ -12,11 +12,11 @@ body {
 }
 @font-face {
   font-family: Poppins Bold;
-  src: url(/fonts/Poppins-Bold.otf);
+  src: local('Poppins Bold'), url(/assets/fonts/Poppins-Bold.otf)
 }
 @font-face {
   font-family: Futura;
-  src: url(/fonts/Futura\ Heavy\ font.ttf);
+  src: local('Futura'), url(/assets/fonts/Futura\ Heavy\ font.ttf)
 }
 
 /* Style my header */
